@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Cryptography</title>
+    <link rel="stylesheet" href="static/style/style.css">
+    <link rel="stylesheet" href="static/style/bgvideo.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/files/favicon_io/">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/files/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/files/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="static/files/favicon_io/site.webmanifest">
+
+</head>
+
+<body>
+    <div>
+        
+        <div class="bgvideo">
+            <video src="static/files/Multimédia1.mp4" type="video/mp4" autoplay muted loop></video>
+            <div class="effect"></div>
+            <div class="video-text">
+                <h1>Present and Future of the Quantum Cryptography</h1>
+                <h2> DEG0009</h2>
+           </div>
+        
+    </div>
+
+        <div>
+            <div>
+                <h2>Co je kvantová kryptografie?</h2>
+                <p><span class="bold-text">Kvantová kryptografie</span> je metoda ochrany komunikace založená na
+                    principech
+                    kvantové
+                    fyziky. Na rozdíl od tradiční
+                    kryptografie, která používá matematické metody k zajištění utajení informací, se kvantová
+                    kryptografie
+                    zaměřuje
+                    na fyziku a zabývá se případy, kdy jsou informace přenášeny pomocí objektů kvantové mechaniky.</p>
+            </div>
+            <div>
+               <br> <hr><h2>Jak to všechno začalo?</h2>
+                <img src="static/images/key.jpg" align="right" width="350" height="250">
+                <p>Historie kvantové kryptografie nezačala komunikačními technologiemi, ale pokusem vyřešit úplně jiný
+                    úkol
+                    —
+                    vytvořit peníze, které nelze předstírat.</p>
+                <p>Stephen Wiesner z Columbia University v roce 1983 navrhl vytvoření kvantových bankovek státního
+                    vzorku,
+                    které
+                    nelze kopírovat. Pravděpodobnost výroby repliky originálu chráněného kvantovými technologiemi je
+                    nulová.
+                </p>
+                <p>Podstatou technologie je, že každá bankovka má pasti s fotony, z nichž každá je určitým způsobem
+                    polarizována
+                    na
+                    dvou různých základech. Jeden základ poskytoval "křížovou" polarizaci: to znamená, že foton mohl být
+                    polarizován
+                    v úhlu 0 nebo 90 stupňů od určité vertikální a druhý diagonální, to znamená s úhly 45 a 135 stupňů.
+                </p>
+                <p>Aby bylo možné bankovku zkopírovat, musí padělatel měřit polarizaci fotonů, ale neví, v jakém základu
+                    je
+                    každý
+                    polarizován. Zločinec si může vybrat základy náhodně a pak má nějaké šance na úspěch, i když velmi
+                    malé.
+                    Pokud
+                    však vytvoříte fotonické pasti, stanou se zanedbatelnými. To znamená-zvýšit počet fotonů na každé
+                    bankovce.
+                </p>
+                <p>Byl to skvělý nápad, ale bohužel technicky nerealizovatelný: pohodlné a hromadně použitelné fotonové
+                    pasti
+                    vhodné
+                    pro umístění na peníze nebyly dosud vytvořeny.</p><hr><br>
+            </div>
+            <div>
+                <h2>Co je kvantová síť a kdy se objevily první technologie a protokoly?</h2>
+                <p>Wiesner také navrhl, že podobný mechanismus lze použít k vytvoření důvěrných komunikačních kanálů.
+                    Již
+                    rok po
+                    vydání jeho článku vyvinuli vědci Gilles Brassard a Charles Bennett první protokol pro kvantovou
+                    komunikaci,
+                    který pojmenovali podle prvních písmen svých příjmení a roku výroby technologie — BB84. Právě tento
+                    protokol
+                    je
+                    široce používán v moderních kvantových komunikačních sítích.</p>
+                <p>Bennett a Brassard navrhli kódování dat v kvantových stavech jednotlivých fotonů, například v jejich
+                    polarizaci.
+                    Stejně jako u jiných kvantových objektů samotná skutečnost měření nutně ovlivňuje stav objektu,
+                    proto
+                    pokud
+                    se
+                    někdo třetí pokusí "odposlouchávat" přenos fotonů-to znamená měřit stavy fotonů, které si
+                    vyměňujeme,
+                    určitě
+                    si
+                    toho všimneme, protože se změní stavy fotonů. Teoreticky je proto v zásadě nemožné diskrétně se
+                    připojit
+                    ke
+                    kvantovému datovému kanálu-neumožňují základní zákony kvantové mechaniky (v praxi má tato
+                    technologie
+                    také
+                    určité zranitelnosti).</p>
+                <h3>Protokol BB84</h3>
+                <p text-align="center">BB84 je nejstarší protokol kvantové kryptografie. Protokol funguje následovně. Jeden z partnerů
+                    (tradičně
+                    nazývaný Alice) vysílá další (Bob) fotony polarizované v jednom ze dvou, neortogonálních, základech:
+                    obdélníkový
+                    nebo diagonální. Bob je přijímá a měří polarizaci výběrem základů pro měření náhodně a zaznamenává
+                    výsledky
+                    měření a báze. On a Alice si poté vyměňují informace o použitých základnách (ale ne o výsledcích
+                    měření)
+                    přes
+                    otevřený kanál a data získaná z neshodných základen jsou resetována. Zůstávají pouze hodnoty měřené
+                    v
+                    odpovídajících základech (v technologii kvantové distribuce klíčů se tomu říká "prosévání klíče").
+                </p>
+                
+            <img src="static/images/zbk.png" alt="">
+            </div>
+            <div>
+                <h2>Omezení kvantové komunikace</h2>
+                <p>Hlavními omezeními kvantové kryptografie jsou rychlost distribuce klíčů a vzdálenost mezi vysílačem a
+                    přijímačem. Tento problém se snaží vyřešit moderní fyzici, kteří přicházejí s novými protokoly,
+                    novými
+                    optickými obvody, novými metodami přípravy měření kvantových stavů.</p>
+                <p>Je také nutné neustále snižovat počet chyb. Kritická míra chyb je 11%. Čím větší je vzdálenost,
+                    kterou je
+                    kvantový klíč přenášen, tím více klesá poměr signál — šum. Signál mizí v optickém vlákně a šum
+                    zůstává.
+                    Kvůli těmto světlicím ve skutečném vlákně není možné přenášet informace stovky kilometrů.</p>
+                <br><h2>Oblasti použití kvantové kryptografie. Kvantový blockchain</h2>
+                <img src="/static/images/money.jpg" align="left" width="175" height="314">
+                <p> Kvantové šifrování lze použít nejen k ochraně přenosu dat, ale také k jejich distribuovanému
+                    ukládání, k
+                    ochraně blockchainu. S příchodem kvantových počítačů bude blockchainový systém nestabilní:
+                    Blockchain je
+                    velmi zranitelný vůči útokům pomocí kvantového počítače. Kvantový počítač vám umožní spočítat tajný
+                    kód
+                    podle čísla peněženky, pomocí kterého bude možné tuto peněženku zlikvidovat.</p>
+                <p>Skupina vědců RCC navrhla použití kvantových klíčů k ochraně blockchainových systémů. Dnes v
+                    bankovních
+                    datových centrech existují šifry, které používají symetrické klíče, které jsou přenášeny i ručně. K
+                    nim
+                    jsou
+                    navíc nainstalovány systémy kvantové distribuce klíčů a klíče se mění nejen jednou za několik
+                    měsíců,
+                    ale
+                    jednou za několik sekund. Na jedné straně je tento mechanismus horší než jednorázový notebook a na
+                    druhé
+                    straně poskytuje obrovskou výhodu oproti tomu, co je nyní.</p>
+                <p>Kvantovou kryptografii lze také použít pro distribuované ukládání dat. Je možné distribuovat
+                    informace do
+                    více datových center a neustále je míchat pomocí kvantově chráněných kanálů. Takže i když někdo
+                    získá
+                    přístup k části těchto datových center, nedostane všechny informace. To bude fungovat, pokud bude
+                    část
+                    datových center zničena: legitimní uživatel bude moci autentizovaným způsobem kontaktovat zbývající
+                    datová
+                    centra a obnovit všechny užitečné informace.</p>
+                <p>Kvantové klíče budou také užitečné pro zabezpečení autentizačních úkolů, což je v podstatě ověření
+                    "něčí
+                    —
+                    cizí". V tomto případě vám kombinace technologie hash funkcí a jednorázového poznámkového bloku
+                    umožňuje
+                    zkontrolovat například data pro systém internetu věcí od řídícího centra nebo od někoho jiného. To
+                    je
+                    velmi
+                    důležité, protože za pět až sedm let může být hrozba kvantového počítače skutečná. Zároveň bude v
+                    ulicích
+                    obrovské množství bezpilotních automobilů, které jsou zatím jednotky a budou miliony. A všichni
+                    budou
+                    muset
+                    přijímat řídicí signály a důvěryhodně aktualizovat firmware bez interakce s osobou po celé měsíce.
+                    To
+                    znamená, že budou muset získat kvantové klíče a poté je použít v procesu pohybu.</p>
+            </div>
+            <div>
+                <br><br>
+                <h2>Perspektivy kvantové kryptografie. Satelitní kvantová kryptografie</h2>
+                <p>Čína již vybudovala národní síť kvantové kryptografie, která spojuje Peking, Šanghaj, Hefei a Jinan.
+                    Rusko má
+                    také projekt plánu kvantové komunikace, který dohlíží na ruské železnice. Kromě toho ruští vědci ve
+                    spolupráci s čínskými kolegy pracují na satelitní kvantové kryptografii.</p>
+                <p>Existuje systém připojený k dalekohledu doprovázejícímu satelit Mo-Tzu umístěný na oběžné dráze v
+                    roce
+                    2016.
+                    Tento systém je schopen přijímat kvantové stavy z nízké oběžné dráhy. Atmosféra vertikálně od
+                    satelitu k
+                    zemi má přibližně stejnou ztrátu jako 10 kilometrů na hladině moře. To znamená, že v Dobrý den
+                    můžete
+                    přenášet kvantové klíče "satelit-Země".</p>
+                <p>V takové perspektivě od serverových řešení, která již lze zakoupit, přecházíme na satelitní řešení.
+                    Na
+                    horizontu 8-10 let již existuje vyhlídka, že se tato technologie dostane ke koncovým uživatelům. Pak
+                    například získáním služby "Státní služby" si můžeme stáhnout a získat kvantové klíče z jakéhokoli
+                    bankomatu
+                    do vlastního telefonu a důvěryhodně využívat státní nebo bankovní služby.</p>
+                <p>Hlavní technologickou otázkou nyní je, zda se lidstvu v dohledné budoucnosti podaří vyrobit dobrý
+                    kvantový
+                    opakovač, ne nekonečně drahý a nekonečně složitý, ale ten, který lze vyrobit a postavit. Existuje
+                    důvod
+                    věřit, že to bude možné na horizontu 8-10 let.</p>
+            </div>
+            <div>
+               <br> <h2>Vyhodnocení a závěr</h2>
+                <p>Stojíme na prahu velkých objevů a vynálezů s úplně jinou logikou a neuvěřitelnými možnostmi. Můžeme
+                    říci,
+                    že
+                    kvantová fyzika a zařízení na ní založená mění svět a formují vzhled moderní civilizace, ale zatím
+                    jsme
+                    jen
+                    na začátku její cesty</p>
+            </div>
+            <div>
+                <br><h2>Zdroje</h2>
+                <p><a href="https://cs.wikipedia.org/wiki/Kvantov%C3%A1_kryptografie"
+                        target="_blank">https://cs.wikipedia.org/wiki/Kvantov%C3%A1_kryptografie</a></p>
+                <p><a href="https://habr.com/ru/post/460165/" target="_blank">https://habr.com/ru/post/460165/</a></p>
+                <p><a href="Protokol BB84 – Wikipedie (wikipedia.org)" target="_blank">Protokol BB84 – Wikipedie
+                        (wikipedia.org)</a></p>
+            </div>
+         </div>
+        </div>
+</body>
+</html>
